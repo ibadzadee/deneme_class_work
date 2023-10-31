@@ -1,0 +1,104 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0px 32px;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    padding: 100px 0px;
+
+
+    .center {
+        @include display(space-between, center);
+
+        .left {
+            @include display;
+            box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
+            width: 45%;
+            // height: 200px;
+            padding: 0px 15px;
+
+            .birinci {
+                border-right: 1px solid grey;
+                padding: 20px;
+                gap: 20px;
+                @include display(center, flex-start);
+                flex-direction: column;
+                gap: 20px;
+                #cards{
+                    display: grid;
+                    grid-template-columns: repeat( 2, auto);
+                   gap: 10px;
+                    div{
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                        @include display;
+
+                    }
+                }
+
+            }
+
+            .ikinci {
+                padding-left: 20px;
+                @include display(center, flex-start);
+                flex-direction: column;
+                gap: 20px;
+
+                div {
+                    @include display(center, flex-start);
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+}
+
+.right{
+    @include display();
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+
+    .top{
+        input{
+            padding: 20px;
+        }
+    }
+    .orta{
+        @include display;
+        gap: 20px;
+
+        div{
+            @include display;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 20px;
+            gap: 10px;
+
+            
+        }
+    }
+    .bottom{
+        @include display;
+}
+    button{
+        background-color: green;
+        padding: 20px 50px;
+        border-radius: 100px;
+        @include display(center, flex-end);
+        
+        
+    }
+}

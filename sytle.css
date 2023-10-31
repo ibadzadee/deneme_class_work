@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0px 32px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  padding: 100px 0px;
+}
+section .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .center .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.2);
+  width: 45%;
+  padding: 0px 15px;
+}
+section .center .left .birinci {
+  border-right: 1px solid grey;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+section .center .left .birinci #cards {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+}
+section .center .left .birinci #cards div {
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .center .left .ikinci {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+section .center .left .ikinci div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 45%;
+}
+.right .top input {
+  padding: 20px;
+}
+.right .orta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.right .orta div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  gap: 10px;
+}
+.right .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right button {
+  background-color: green;
+  padding: 20px 50px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}/*# sourceMappingURL=sytle.css.map */
